@@ -13,12 +13,13 @@
     surface2fn <- "FI_LAN_DSM_EROD_SUBSOIL_90M_R.tif"
 
     #File name of random points shapefile generated in Step 3
-    rpshape <- "RandomPoints" #Excluding file extension
+    rpshape <- "FSE_random_points" #Excluding file extension
     #File name of adjusted random points shapefile
     apshape <- "AdjustedRandomPoints" #Excluding file extension
 
-    ##Code begins here
+    ##Processing begins here
     library(rgdal)
+    library(sm)
     setwd(wd)
 
     #Import Data
@@ -48,5 +49,5 @@
     #Plot results for surface2
     plot(density(rpsurf2, bw = ((rd$bw+ad$bw)/2), na.rm=TRUE),main ="Subsoil dispersibility, random sites", xlim = c(0,8), ylim = c(0,0.3))
     plot(density(apsurf2, bw = ((rd$bw+ad$bw)/2), na.rm=TRUE),main ="Subsoil dispersibility, actual sites", xlim = c(0,8), ylim = c(0,0.3))
-    dev.off() 
+    dev.off()
 '''
