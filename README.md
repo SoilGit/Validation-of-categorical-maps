@@ -29,3 +29,22 @@ Contributing: If you can see improvements that can be made, please do a pull req
 Credits: This is an implementation of the model validation method described in Section 6.1 Using R for Digital Soil Mapping (Malone *et al.* 2017) and is based on Congalton (1991). Tom Orton (UQ) provided advice and an *R function* to calculate a weighted Kappa based on methods by Agresti (2002c) and Spitzer *et al.* (1967). Implementation by Peter Zund (DES).
 
 License: Free to use with acknowledgement.
+
+### Further detail
+1.  Define what is to be validated.
+Categorical maps that are indepentent (i.e. not dependent on a sub-map), need only be validated. The accuracy of dependent maps is a function of the sub-maps. For example the Overall suitability map is completly dependent on the *Surface stability* and *Subsoil dispersibility* maps, hence only the later two maps need be tested.
+
+1.  Determine minimum number of validation sites for a statistically adequate validation.
+Generally in science/statistics we need a minimum of three reps to make an inference if we have one class of outcome. With categorical maps, we need a minimum of three reps for each class, hence the minimum number of sites to validate a map should be at least 3 X No. of possible classes (i.e. For *Surface stability* map that has four possible classes requires a minimum of 12 validation sites). Final number of independent validation sites depends on time and budget, the more the better.
+
+1.  Randomly generate validation sites.
+Use script provided
+
+1.  Adjust random sites to improve field work efficiency.
+When adjusting a randomly generated validation site, ensure adjusted site has same predicted values. This ellimentnates bias from being introduced.
+
+1.  Determine if unaccepatble bias has been introduced to adjusted validation sites.
+
+1.  Readjust sites if necessary and recheck for bias. Use same code as in Step 5.
+
+1.  Determine data required at validation sites so as to be able to validate maps. For an example see data form from FSE validation, note this form does not show the lab anaylsis conducted on the samples. Form is save in the repsoitory.
