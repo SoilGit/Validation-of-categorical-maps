@@ -48,3 +48,11 @@ When adjusting a randomly generated validation site, ensure adjusted site has sa
 1.  Readjust sites if necessary and recheck for bias. Use same code as in Step 5.
 
 1.  Determine data required at validation sites so as to be able to validate maps. For an example see data form from FSE validation, note this form does not show the lab anaylsis conducted on the samples. Form is save in the repsoitory.
+
+1.  Conduct field work. Have fun
+
+1.  Collate field data and determine actual categorical values at actual validation sites visited.
+
+1.  Conduct statistical anaylsis. Use scripts provided. The Kappa test discounts results that could occur by chance and hence is a better summary of the overall performance of the predicted map that just examing a error matrix. Tom Orton added the *weighted Kappa test* that considers the degree of difference between observed and predicted values. It assumes that classes are ordinal. Don't use weighted Kappa if your classes are not ordinal. In our example from the Fitzroy, *Surface stability* classes are nominal and *Subsoil dispersibility* classes are ordinal. 
+
+The function calcWeightedKappa calculates the weighted kappa, with different choices for the weights : weights.method  = ‘None’ gives the ordinary kappa statistic, weights.method = ‘Ag’ gives the weights suggested in Section 10.5.5 of the attached book section (see pdf in repository), and weights.method = ‘FC’ gives the Fleiss and Cohen weights suggested on the same page. Maybe use ‘Ag’ for now.
