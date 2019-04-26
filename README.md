@@ -20,12 +20,12 @@ To asist with the task, a workflow has been defined, necessary detail provided t
 
 
 
-Installation: Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
+Installation: Create a valdiation directory on your temp drive (C://Temp/Validation). Copy required files (Noted in associated scripts) to this folder. Once finished, zip and copy folder to a backup drive for furtue reference. Scripts written in RStudio Version 1.1.453 connected to R 3.5.1
 
-Usage: The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+Usage: This project is wriiten to assist with validating categorical class maps, both vector and raster type.
 
-Contributing: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
+Contributing: If you can see improvements that can be made, please do a pull request.
 
-Credits: Include a section for credits in order to highlight and link to the authors of your project.
+Credits: This is an implementation of the model validation method described in Section 6.1 Using R for Digital Soil Mapping (Malone *et al.* 2017) and is based on Congalton (1991). Tom Orton (UQ) provided advice and an *R function* to calculate a weighted Kappa based on methods by Agresti (2002c) and Spitzer *et al.* (1967). Implementation by Peter Zund (DES).
 
-License: Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide!
+License: Free to use with acknowledgement.
