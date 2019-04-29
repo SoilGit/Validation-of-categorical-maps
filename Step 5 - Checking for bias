@@ -1,4 +1,5 @@
-''' ####Validation of categorical maps####
+```Rscript
+    ####Validation of categorical maps####
     ###
     ###Step 5 - Checking for introduced bias
     ###
@@ -50,4 +51,4 @@
     plot(density(rpsurf2, bw = ((rd$bw+ad$bw)/2), na.rm=TRUE),main ="Subsoil dispersibility, random sites", xlim = c(0,8), ylim = c(0,0.3))
     plot(density(apsurf2, bw = ((rd$bw+ad$bw)/2), na.rm=TRUE),main ="Subsoil dispersibility, actual sites", xlim = c(0,8), ylim = c(0,0.3))
     dev.off()
-'''
+```
