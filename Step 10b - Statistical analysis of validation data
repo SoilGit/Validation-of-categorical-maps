@@ -1,4 +1,4 @@
- '''   
+```Rscript   
     ####Validation of categorical maps####
     ###
     ###Step 10 - Statistical anaylsis of validation data 
@@ -75,4 +75,4 @@
     write.csv(result, file = "Surface2Validation.csv")
 
     #End of code
-'''
+```
