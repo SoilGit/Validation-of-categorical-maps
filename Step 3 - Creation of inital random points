@@ -1,4 +1,5 @@
-''' ####Validation of categorical maps####
+```Rscript
+    ####Validation of categorical maps####
     ###
     ###Step 3 - Generation of an indepentent random set of validation points
     ###
@@ -40,4 +41,4 @@
     rp <- SpatialPointsDataFrame(coords = rp@coords, data = as.data.frame(data))
     writeOGR(obj = rp, dsn = wd, layer = "RandomPoints", driver="ESRI Shapefile",check_exists = TRUE, overwrite_layer = TRUE) #Save a shapefile for later reference
     write.csv(as.data.frame(rp), file = "RandomPoints.csv", row.names = FALSE) #Save a csv for later reference
-'''
+```
