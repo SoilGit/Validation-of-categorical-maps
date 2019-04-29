@@ -1,3 +1,4 @@
+```Rscript
 calcErrorMat <- function(pred , obs , allCats){
   nCats = length(allCats)
   
@@ -48,4 +49,4 @@ calcWeightedKappa <- function(errorMat , weights.method = 'None'){
   }    
   return(kappa)
 }
-
+```
