@@ -4,7 +4,7 @@ A validation method to validate categorical maps using an independent validation
 ## Summary
 This method uses *Weighted Kappa coefficents* to determine the reliability of *categorical maps*. The method was orginally used to validate the *Vunerability to soil erosion mapping* conducted in the Fitzroy NRM region, specfically the *Surface soil stability* map and the *Subsoil dispersibility map*. The results are documented in the *Technical Report*. This generic workflow has been written for validing two *surfaces* (Raster or Vector) at once. It can be used to validation of polygonal soil class maps, polygonal limitation subclass maps, raster categorical soil attribute maps and any other categorical maps.
 
-To asist with the task, a workflow has been defined, necessary detail provided to complete each step including background info and R code has been scripted to automate some of the tasks.
+To assist with the task, a workflow has been defined, necessary detail provided to complete each step including background info and R code has been scripted to automate some of the tasks.
 
 ## Workflow
 1.  Define what is to be validated.
