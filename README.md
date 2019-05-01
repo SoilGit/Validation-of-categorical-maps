@@ -20,15 +20,15 @@ To assist with the task, a workflow has been defined, necessary detail provided 
 
 
 
-Installation: Click green **Clone or Download Repository**, Click **Download ZIP file**, Save zip file to C://Temp, extract files, right click *CatValidStep3.R* and open with RStudio, adjust user inputs in RStudio, run script, repeat with *CatValidStep5.R* and so on. You will need RStudio and R loaded to your computer.
+**Installation:** Click green **Clone or Download** button, select **Download ZIP**, save zip file to C://Temp, extract files, right click *CatValidStep3.R* and open with RStudio, adjust user inputs in RStudio, run script, repeat with *CatValidStep5.R* and so on. Always source files from this respository so that you have the latest version. You will need RStudio and R loaded to your computer.
 
-Usage: This project is wriiten to assist with validating categorical class maps, both vector and raster type.
+**Usage:** This project is wriiten to assist with validating categorical class maps, both vector and raster type.
 
-Contributing: If you can see improvements that can be made, please do a *pull request* or raise an *issue*.
+**Contributing:** If you can see improvements that can be made, please do a *pull request* or raise an *issue*.
 
-Credits: This is an implementation of the model validation method described in Section 6.1 Using R for Digital Soil Mapping (Malone *et al.* 2017) and is based on Congalton (1991). Tom Orton (UQ) provided advice and an *R function* to calculate a weighted Kappa based on methods by Agresti (2002c) and Spitzer *et al.* (1967). Implementation by Peter Zund (DES).
+**Credits:** This is an implementation of the model validation method described in Section 6.1 Using R for Digital Soil Mapping (Malone *et al.* 2017) and is based on Congalton (1991). Tom Orton (UQ) provided advice and an *R function* to calculate a weighted Kappa based on methods by Agresti (2002c) and Spitzer *et al.* (1967). Implementation by Peter Zund (DES).
 
-License: Free to use with acknowledgement.
+**License:** Free to use with acknowledgement.
 
 ### Further detail
 1.  Define what is to be validated.
